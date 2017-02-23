@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>angular+gulp+bootstrap+less</title>
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- other css -->
+    <link href="js/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- end other css -->
+  </head>
+  <body>
+      <div ui-view="" ng-controller="rootCtrl"></div>
+      <!-- other js  -->
+      <script src='js/lib/jquery/dist/jquery.min.js'></script>
+      <script src='js/lib/bootstrap/dist/js/bootstrap.min.js'></script>
+      <script src='js/lib/angular/angular.js'></script>
+      <script src='js/lib/angular-ui-router/release/angular-ui-router.js'></script>
+      <script src='js/lib/angular-animate/angular-animate.min.js'></script>
+      <script src='js/lib/ui-bst/carousel/carousel.js'></script>
+      <script src='js/lib/ui-bst/pagination/pagination.js'></script>
+      <script src='js/lib/ui-bst/paging/paging.js'></script>
+      <script src='js/lib/ui-bst/tabindex/tabindex.js'></script>
+      <!-- end other js  -->
+      <!-- inject:js -->
+      <script src='js/config.js'></script>
+      <script src='app.js'></script>
+      <script src='js/controllers/rootCtrl.js'></script>
+      <script src='js/controllers/uibstCtrl.js'></script>
+      <!-- endinject -->
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<!-- total-items -- 总数； ng-model -- 当前页面； ng-change -- 分页切换时触发，可做一些数据请求操作； previous-text -- 上一页文本；
+next-text -- 下一页文本； first-text -- 首页文本； last-text -- 末页文本; items-per-page -- 每页多少子项，默认10;
+force-ellipses -- 默认false，是否省略; max-size -- 分页最大显示-->
+<div style='width:400px;' ng-controller="PaginationDemoCtrl">
+    <ul uib-pagination total-items="totalItems" ng-model="currentPage" class="pagination-style1" force-ellipses="true" max-size="5" ng-change="pageChanged()"></ul>
+    <ul uib-pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></ul>
+    <ul uib-pagination direction-links="false" boundary-links="true" total-items="totalItems" ng-model="currentPage"></ul>
+    <ul uib-pagination direction-links="false" total-items="totalItems" ng-model="currentPage" num-pages="smallnumPages"></ul>
+    <pre>The selected page no: {{currentPage}}</pre>
+    <button type="button" class="btn btn-info" ng-click="setPage(3)">Set current page to: 3</button>
+</div>

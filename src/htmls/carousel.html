@@ -1,0 +1,19 @@
+<!-- uib-carousel指令参数：
+active -- 第一张图片； interval -- 轮播时间； no-pause -- 鼠标停留是否进行停留； no-transition -- 轮播时是否需要动画；
+no-wrap -- 是否循环； template-url -- 指定模板
+uib-slide指令参数：
+acture -- 该图片是否显示； index -- 图片的唯一标识； template-url -- 指定模板 -->
+
+<div ng-controller="carouselCtrl">
+  <div style="height: auto;">
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        <img ng-src="{{slide.image}}" actual="true" style="margin:auto;max-width:100%;">
+        <!-- <div class="carousel-caption">
+          <h4>Slide {{slide.id}}</h4>
+          <p>{{slide.text}}</p>
+        </div> -->
+      </div>
+    </div>
+  </div
+</div>
