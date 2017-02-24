@@ -113,7 +113,7 @@ gulp.task('copy-htmls', function() {
 });
 
 gulp.task('script', function() {
-    gulp.src(['./src/js/**/*.js'])
+    gulp.src(['./src/js/**/*.js', '!./src/js/configs/**/*.js'])
         .pipe(uglify())
         .pipe(gulp.dest('www/js'));
 });

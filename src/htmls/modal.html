@@ -1,0 +1,38 @@
+<div ng-controller="ModalDemoCtrl" style="margin:15px;">
+    <script type="text/ng-template" id="info1.html">
+      <div class="modal-header">
+          <h3 class="modal-title">错误提示</h3>
+      </div>
+      <div class="modal-body">
+          随地大小便，罚款100w！
+      </div>
+      <div class="modal-footer">
+          <button class="btn btn-primary" type="button" ng-click="close()">知道了</button>
+          <!-- <button class="btn btn-warning" type="button" ng-click="close()">Cancel</button> -->
+      </div>
+    </script>
+    <script type="text/ng-template" id="info2.html">
+      <div class="modal-header">
+          <h3 class="modal-title" style="text-align:center;">服务协议</h3>
+      </div>
+      <div class="modal-body">
+          <p>恭喜你，你中了500w！</p>
+          <p>限你10秒钟之内来领</p>
+          <p>限你10秒钟之内来领</p>
+          <p>限你10秒钟之内来领</p>
+          <p>限你10秒钟之内来领</p>
+          <p>限你10秒钟之内来领</p>
+          <p>限你10秒钟之内来领</p>
+          <p>限你10秒钟之内来领</p>
+          <p>限你10秒钟之内来领</p>
+          <p>限你10秒钟之内来领</p>
+          <p>本公司拥有最终解释权</p>
+      </div>
+      <div class="modal-footer" style="text-align:center;">
+          <button class="btn btn-primary" type="button" ng-click="close()">知道了</button>
+          <!-- <button class="btn btn-warning" type="button" ng-click="close()">Cancel</button> -->
+      </div>
+    </script>
+    <button type="button" class="btn btn-default" ng-click="open('info1.html', 'sm')">错误提示</button>
+    <button type="button" class="btn btn-default" ng-click="open('info2.html')">服务协议</button>
+</div>

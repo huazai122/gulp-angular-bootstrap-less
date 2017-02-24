@@ -6,7 +6,11 @@ var App = angular.module('myApp', [
   'ui.bootstrap.carousel',
   'ui.bootstrap.pagination',
   'ui.bootstrap.paging',
-  'ui.bootstrap.tabindex'
+  'ui.bootstrap.tabindex',
+  'ui.bootstrap.modal',
+  'ui.bootstrap.multiMap',
+  'ui.bootstrap.stackedMap',
+  'ui.bootstrap.position'
 ]);
 
 //项目的初始函数和前端路由定义
@@ -41,6 +45,14 @@ App.run(function(){
                 views: {
                     '': {
                         templateUrl: 'htmls/pagination.html'
+                    }
+                }
+            })
+          .state('modal', {
+                url: '/index/modal',
+                views: {
+                    '': {
+                        templateUrl: 'htmls/modal.html'
                     }
                 }
             })
